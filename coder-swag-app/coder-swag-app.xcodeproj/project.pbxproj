@@ -12,7 +12,9 @@
 		083578CA2439E859005AF300 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083578C82439E859005AF300 /* Main.storyboard */; };
 		083578CC2439E85A005AF300 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 083578CB2439E85A005AF300 /* Assets.xcassets */; };
 		083578CF2439E85A005AF300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083578CD2439E85A005AF300 /* LaunchScreen.storyboard */; };
-		083578DA2439F163005AF300 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083578D92439F163005AF300 /* CategoryTableViewCell.swift */; };
+		083578DA2439F163005AF300 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083578D92439F163005AF300 /* CategoryCell.swift */; };
+		083578DC2439F584005AF300 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083578DB2439F584005AF300 /* Category.swift */; };
+		083578DF2439F721005AF300 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083578DE2439F721005AF300 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +25,9 @@
 		083578CB2439E85A005AF300 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		083578CE2439E85A005AF300 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		083578D02439E85A005AF300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		083578D92439F163005AF300 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		083578D92439F163005AF300 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		083578DB2439F584005AF300 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		083578DE2439F721005AF300 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		083578C32439E859005AF300 /* coder-swag-app */ = {
 			isa = PBXGroup;
 			children = (
+				083578DD2439F708005AF300 /* Services */,
 				083578D82439F0EA005AF300 /* View */,
 				083578D72439F0E4005AF300 /* Controller */,
 				083578D62439EA35005AF300 /* Model */,
@@ -71,6 +76,7 @@
 		083578D62439EA35005AF300 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				083578DB2439F584005AF300 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -86,9 +92,17 @@
 		083578D82439F0EA005AF300 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				083578D92439F163005AF300 /* CategoryTableViewCell.swift */,
+				083578D92439F163005AF300 /* CategoryCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		083578DD2439F708005AF300 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				083578DE2439F721005AF300 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +178,9 @@
 			files = (
 				083578C72439E859005AF300 /* CategoriesViewController.swift in Sources */,
 				083578C52439E859005AF300 /* AppDelegate.swift in Sources */,
-				083578DA2439F163005AF300 /* CategoryTableViewCell.swift in Sources */,
+				083578DA2439F163005AF300 /* CategoryCell.swift in Sources */,
+				083578DC2439F584005AF300 /* Category.swift in Sources */,
+				083578DF2439F721005AF300 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
